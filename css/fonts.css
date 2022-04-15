@@ -1,0 +1,126 @@
+.nav_links{
+    text-decoration: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    color: #4b4b4b;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+.nav_links:hover{
+    color: #007f06;
+}
+
+.nav_links.active{
+    font-weight: 500;
+    color: #007f06;
+}
+.overline_txt {
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    line-height: 58px;
+    margin-top: 20px;
+}
+
+.hero_title {
+    font-family: 'Sen', sans-serif;
+    font-size: 52px;
+    line-height: 68px;
+    font-weight: 400;
+}
+
+.block_title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 42px;
+    line-height: 55px;
+    font-weight: 400;
+}
+
+.about_con .block_title {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.header_title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 58px;
+    line-height: 63px;
+    font-weight: 400;
+}
+
+.card_title {
+    font-family: 'Sen', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.cardmed_title {
+    font-family: 'Sen', sans-serif;
+    font-size: 22px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+.small_title {
+    font-family: 'Sen', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.body_txt {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact_dets .body_txt{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer_title{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.footer_links {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    -webkit-transition: color 350ms ease-in-out;
+    transition: color 350ms ease-in-out;
+    color: #4b4b4b;
+}
+
+.footer_links:hover {
+    color: #007f06;
+}
+
+.footnote_txt {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
+    color: #4b4b4b;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_links{
+        font-size: 42px;
+        line-height: 55px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+.hero_title {
+    font-size: 40px;
+    line-height: 48px;
+}
+}
+
+

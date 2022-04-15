@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+section{
+    position: relative;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+body{
+    color: lighten(black, 40%);
+    position: relative;
+    background-color: white;
+}
+
+.custom_con{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.addshadow {
+    box-shadow: -50px 0px 50px rgb(0 0 0 / 10%);
+}
+
+.addshadow .eeii_logo {
+    width: 57px;
+}
+
+.eeii_logo{
+    transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+}
+
+.cta_btn {
+    background-color: #007f06;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+  }
+
+  .cta_btn:hover{
+    background-color: #026f07;
+  }
+
+  .bg_pattern{
+        background-image: url("bg_pattern.png");
+  }
+
+/**navigation block**/
+.nav_block{
+    position: fixed;
+    background-color: white;
+    overflow: inherit!important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 999;
+    box-shadow: -50px 0px 50px rgb(0 0 0 / 10%);
+}
+
+.eeii_logo{
+    width: 70px;
+}
+
+.nav_con{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link_con.desk{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 18px;
+}
+
+.nav_link_con.mob{
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .sidebar .closebtn{
+    font-family: 'Inter', sans-serif;
+    font-size: 62px;
+    color: #4b4b4b;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+.sidebar .closebtn:hover{
+    color: #007f06;
+}
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    margin-left: 0px;
+  }
+  
+  .openbtn {
+    font-size: 36px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #4b4b4b;
+    padding: 0px;
+    border: none;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+  }
+  
+  .openbtn:hover {
+    background-color: #11324dd9;
+  }
+  
+  #main {
+    transition: margin-right .5s;
+    position: relative;
+  }
+
+  /*dropwdown**/
+  .custom_drpdwn{
+      position: relative;
+  }
+  
+  .custom_drpdwn:hover .custom_drpdwn_con{
+      display: grid;
+  }
+
+  .custom_drpdwn_con {
+    display: none;
+    grid-template-columns: 1fr;
+    width: 161px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+}
+
+  .drpdwn_btn {
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    color: #1f1f1fd9;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+  }
+
+  .drpdwn_btn:hover{
+      background-color: #e8e8e8;
+      color: #007f06;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+  }
+
+
+  /**footer*/
+  .footer_con{
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  .footer_logo_img{
+      height: 200px;
+  }
+
+ .footer_con {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.footer_logo_con {
+    /**width: 50%;**/
+}
+
+
+.footer_links_con, .footer_contact{
+    /**width: 25%;**/
+}
+
+.footer_contact .footer_grid{
+    margin-top: 0px;
+}
+
+.footer_grid{
+    margin-top: 16px;
+}
+
+.footer_links_con .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+}
+
+.footer_contact .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+}
+
+  .footer_icon {
+    position: relative;
+    top: 0;
+    width: 16px;
+    height: 20px;
+    margin-right: 10px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.footer_card {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footnote_con{
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-top: rgb(191 187 187 / 50%) solid 1px;
+}
+
+/**header block**/
+.header_block{
+    padding-top: 184px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) and (min-width:1024px) {
+
+    .footer_links_con, .footer_contact {
+        width: auto;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .custom_drpdwn_con {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 29px;
+    }
+
+    .sidebar a {
+        text-align: left;
+    }
+
+
+      .cta_btn{
+          width: 100%;
+      }
+      .nav_link_con.desk{
+        display: none;
+    }
+    
+    .nav_link_con.mob{
+        display: block;
+    }
+
+    .footer_con {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .mrgn_top{
+        margin-top: 14px;
+    }
+
+    .footer_links_con{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer_links_con, .footer_contact {
+        width: 100%;
+    }
+
+    .footer_links_con .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+    }
+
+    .footer_con {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footnote_txt {
+        text-align: start;
+    }
+    .footnote_con {
+        padding-bottom: 51px;
+    }
+    
+  }
